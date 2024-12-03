@@ -1,0 +1,36 @@
+import * as React from "react";
+import { libraryStyles } from "./styles/LibraryStyles";
+
+export default function LibraryView() {
+  return (
+    <>
+      <div className="library-container">
+        <div className="header-section">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/3a47264857dfe1577d89d70006b8302cac47b5c999d78d2be621b5df55d7b335?placeholderIfAbsent=true&apiKey=ddcfcd2bff1146aba7e87ea4e07a3070"
+            className="back-icon"
+            alt="Back navigation"
+          />
+          <div className="library-title">My Library</div>
+        </div>
+        <div className="content-wrapper">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/d7c005cdc9cbacec783063c31494600c83989e66b6488e0d736a1e212982dea7?placeholderIfAbsent=true&apiKey=ddcfcd2bff1146aba7e87ea4e07a3070"
+            className="background-image"
+            alt=""
+          />
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/2b3f3f82ab7970f865280a44d79480d96600e165ff1060964196fe027220a61e?placeholderIfAbsent=true&apiKey=ddcfcd2bff1146aba7e87ea4e07a3070"
+            className="overlay-image"
+            alt=""
+          />
+        </div>
+        <div className="bottom-section" />
+      </div>
+      <style jsx>{libraryStyles}</style>
+    </>
+  );
+}
